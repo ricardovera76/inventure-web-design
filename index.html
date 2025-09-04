@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recruiting Without Limits</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#home" class="logo"><strong>Recruiting</strong>•Shell</a>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#community">Community</a>
+        <a href="#ai">AI Plugin</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </header>
+    <div id="mobileNav" class="mobile-nav">
+      <a href="#home" onclick="toggleMenu()">Home</a>
+      <a href="#about" onclick="toggleMenu()">About</a>
+      <a href="#community" onclick="toggleMenu()">Community</a>
+      <a href="#ai" onclick="toggleMenu()">AI Plugin</a>
+      <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+
+    <section id="home" class="section hero">
+      <h1>Recruiting Without Limits.</h1>
+      <p class="sub">Speed and Scale.</p>
+      <p>
+        We’re building a new model for recruitment. One that combines revenue
+        sharing, a marketing engine, a competitive broker community, and an
+        AI-driven learning platform. This is recruitment rewritten for the
+        modern era.
+      </p>
+      <div style="margin-top: 1rem">
+        <a href="#about" class="btn btn-outline">Learn more</a>
+        <a href="#contact" class="btn btn-dark">Contact</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>Principles</h2>
+      <div class="grid grid-2" style="margin-top: 1.5rem">
+        <div class="card">
+          <h3>Revenue Sharing</h3>
+          <p>
+            Align incentives across brokers and partners to reward outcomes.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Marketing Engine</h3>
+          <p>
+            Programmatic campaigns that amplify reach and reduce time-to-hire.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Broker Community</h3>
+          <p>
+            A competitive, collaborative network with transparent performance.
+          </p>
+        </div>
+        <div class="card">
+          <h3>AI-Driven Learning</h3>
+          <p>Context-aware guidance that makes every recruiter better.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="community" class="section">
+      <h2>Community</h2>
+      <p>
+        A future hub for brokers and hiring partners: profiles, leaderboards,
+        and lightweight deal rooms. Below is a simple mock of how a feed and
+        leaderboard could appear.
+      </p>
+      <div class="grid grid-2" style="margin-top: 1.5rem">
+        <div class="card">
+          <h3>Activity Feed</h3>
+          <ul class="board">
+            <li>
+              <strong>@maria</strong> placed a Sr. Backend Engineer at Google
+              <span style="color: #677">2h</span>
+            </li>
+            <li>
+              <strong>@john</strong> opened a new role: Head of Talent, Series B
+              <span style="color: #677">5h</span>
+            </li>
+            <li>
+              <strong>@rick</strong> shared a playbook: SDR pipeline >20/wk
+              <span style="color: #677">1d</span>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Leaderboard</h3>
+          <ol class="board">
+            <li><strong>@maria</strong> — 18 YTD placements</li>
+            <li><strong>@rick</strong> — 16 YTD placements</li>
+            <li><strong>@john</strong> — 15 YTD placements</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="ai" class="section">
+      <h2>AI Plugin</h2>
+      <p>AI-driven Role Generator base of any set of skills + name.</p>
+      <div class="grid grid-2" style="margin-top: 1.5rem">
+        <div class="card">
+          <h3>Role Brief Generator</h3>
+          <input
+            id="role-title"
+            class="input"
+            placeholder="Job title e.g. Senior Platform Engineer"
+          />
+          <input
+            id="role-skills"
+            class="input"
+            placeholder="Must-have skills e.g. Go, GCP, Terraform"
+          />
+
+          <button class="btn btn-dark">Generate Brief</button>
+          <p style="margin-top: 1rem; color: #666">
+            Output: Concise summary of role impact, core stack, and screening
+            prompts.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Candidate Signal Console</h3>
+          <label for="candidate-select">Select candidate:</label>
+          <select id="candidate-select">
+            <option value="maria">Maria</option>
+            <option value="rick">Rick</option>
+            <option value="john">John</option>
+          </select>
+
+          <ul id="candidate-stats">
+            <li>Engagement score: 82</li>
+            <li>Referrals: 3</li>
+            <li>Matching roles: 2</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Leave Us a message!</p>
+      <form>
+        <input placeholder="Name" style="padding: 0.5rem" />
+        <input placeholder="Email" style="padding: 0.5rem" />
+        <textarea
+          rows="4"
+          placeholder="How can we help?"
+          style="padding: 0.5rem"
+        ></textarea>
+        <button type="button" class="btn btn-dark dis-btn" disabled>
+          Send
+        </button>
+      </form>
+    </section>
+
+    <footer>
+      <!-- mock to privacy and terms link, nice to have? -->
+      <p>
+        © <span id="year"></span> Web Design Shell. All rights reserved. |
+        <a href="#">Privacy</a> | <a href="#">Terms</a>
+      </p>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
